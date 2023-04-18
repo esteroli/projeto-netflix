@@ -11,7 +11,11 @@ body {
 img#logo {
     width: 75px;
     height: 20px;
-    padding: 13px 0 0 20px;
+    padding: 20px 0 0 13px;
+}
+
+.title-entrar {
+    margin-bottom: 33px;
 }
 
 .container {
@@ -30,43 +34,100 @@ h1 {
 
 form {
     max-width: 430px;
-    height: 300px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     /* background-color: white; */
 }
 
 .area-entrar {
     position: relative;
-    margin: 20px 0;
 }
 
 .area-entrar label {
     position: absolute;
-    left: 10px;
-    bottom: 23px;
+    left: 5%;
+    bottom: 1.75vh;
     transition: all 0.2s;
     cursor: text;
     color: gray;
 }
 
 input {
-    width: 100%;
+    width: 95%;
     height: 50px;
     border-radius: 4px;
     border: none;
     background-color: #333;
     color: white;
-    padding: 15px 5px 0 10px;
+    padding: 0 0 0 5%;
+}
+
+.area-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .inputs {
     font-size: 20px;
 }
 
-#lembrar {
+/* #lembrar {
     width: 15px;
     height: 15px;
     margin: 10px 3px 10px 0;
 }
+#lembrar:checked {
+    background: rgba(0,0,0,0);
+} */
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+         
+ input[type="checkbox"] {
+    line-height: 2ex;
+ }
+         
+ input[type="radio"],
+    input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+ }
+         
+ input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+ }
+         
+ input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: gray;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 3px;
+    margin-right: 0.5em;
+ }
+
 
 input#entrar {
     background-color: red;
@@ -74,13 +135,19 @@ input#entrar {
     font-size: large;
     font-weight: bold;
     padding: 0;
+    width: 100%;
 }
 
 .ajuda {
     display: flex;
     justify-content: space-between;
-    margin: 3px;
     color: #979292;
+}
+
+.remember-area {
+    display: flex;
+    align-items: center;
+    justify-self: end;
 }
 
 a {
@@ -94,13 +161,15 @@ a:hover {
 
 #precisa-ajuda {
     vertical-align: middle;
+    color: gray;
 }
 
 form .area-entrar .inputs:focus ~ label,
 form .area-entrar .inputs:valid ~ label {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
     font-size: small;
     color: gray;
+    outline: none
 }
 
 p {
