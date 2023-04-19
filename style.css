@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Netflix Sans', 'Arial', 'sans-serif';
+    src: url(fontes/Netflix\ Sans\ Light.otf) format(otf);
+}
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Netflix Sans', 'Arial', 'sans-serif'
 }
 
 img#logo {
@@ -16,6 +21,7 @@ img#logo {
 
 .title-entrar {
     margin-bottom: 33px;
+    color: white;
 }
 
 .container {
@@ -25,11 +31,6 @@ img#logo {
     display: flex;
     flex-direction: column;
     padding: 0 20px 0 20px;
-}
-
-h1 {
-    color: white;
-    margin-bottom: 17px;
 }
 
 form {
@@ -48,10 +49,11 @@ form {
 .area-entrar label {
     position: absolute;
     left: 5%;
-    bottom: 1.75vh;
+    bottom: 2.1vh;
     transition: all 0.2s;
     cursor: text;
     color: gray;
+    font-size: 14px;
 }
 
 input {
@@ -74,14 +76,6 @@ input {
     font-size: 20px;
 }
 
-/* #lembrar {
-    width: 15px;
-    height: 15px;
-    margin: 10px 3px 10px 0;
-}
-#lembrar:checked {
-    background: rgba(0,0,0,0);
-} */
 input[type="checkbox"]:checked + label::after {
     content: '';
     position: absolute;
@@ -159,6 +153,14 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: rgb(99, 97, 97);
+}
+
+a.sbm {
+    color: blue;
+}
+
 #precisa-ajuda {
     vertical-align: middle;
     color: gray;
@@ -178,4 +180,11 @@ p {
 
 #divisa {
     border-top: 1px solid rgb(100, 100, 100);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(99, 97, 97);
 }
