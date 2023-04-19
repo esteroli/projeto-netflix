@@ -184,7 +184,12 @@ p {
 
 .rodape {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     color: rgb(99, 97, 97);
+    
+}
+
+li {
+    list-style: none;
 }
