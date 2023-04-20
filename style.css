@@ -39,7 +39,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* background-color: white; */
 }
 
 .area-entrar {
@@ -83,7 +82,7 @@ input[type="checkbox"]:checked + label::after {
     height: 0.4ex;
     background: rgba(0, 0, 0, 0);
     top: 0.9ex;
-    left: 0.4ex;
+    left: 0.2ex;
     border: 3px solid black;
     border-top: none;
     border-right: none;
@@ -114,14 +113,13 @@ input[type="checkbox"]:checked + label::after {
     content: "";
     display: inline-block;
     vertical-align: -25%;
-    height: 2ex;
-    width: 2ex;
-    background-color: gray;
-    border: 1px solid rgb(166, 166, 166);
+    height: 1.8ex;
+    width: 1.8ex;
+    background-color: rgb(113, 112, 112);
+    border: none;
     border-radius: 3px;
     margin-right: 0.5em;
  }
-
 
 input#entrar {
     background-color: red;
