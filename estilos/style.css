@@ -57,7 +57,7 @@ form {
 }
 
 input {
-    width: 93%;
+    width: 91%;
     height: 50px;
     border-radius: 4px;
     border: none;
@@ -124,10 +124,10 @@ input[type="checkbox"]:checked + label::after {
 input#entrar {
     background-color: red;
     color: white;
-    font-size: large;
+    font-size: 15px;
     font-weight: bold;
     padding: 0;
-    width: 98%;
+    width: 96%;
 }
 
 .ajuda {
@@ -171,6 +171,7 @@ form .area-entrar .inputs:valid ~ label {
     color: gray;
     outline: none
 }
+
 span {
     font-size: 13px;
     margin: 0;
@@ -181,13 +182,17 @@ span {
     color: rgb(119, 119, 119);
 }
 
-p#new > a {
+p#new a {
     color: white;
     margin: 0;
 }
 
 #protected {
     font-size: 13px;
+}
+
+footer {
+    height: 300px;
 }
 
 #divisa {
@@ -198,10 +203,9 @@ p#new > a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    color: rgb(99, 97, 97);
+    color: rgb(122, 119, 119);
     padding: 30px 0 30px 0;
-    margin: 0 20px 0px 20px;
-    
+    margin: 0 20px 50px 20px;
 }
 
 p#doubt {
@@ -217,5 +221,28 @@ ul {
 }
 
 li {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    padding-right: 12px;
+}
+
+li > a > span {
+    color: rgb(122, 119, 119);
+}
+
+#select {
+    margin-top: 20px;
+}
+
+#idioma {
+    background-color: black;
+    color: gray;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 2px;
+    /* width: 120px;
+    height: 40px; */
+    padding: 12px 15px 12px 40px;
+}
+
+option {
+    padding: 12px 26px 12px 50px;
 }
