@@ -22,12 +22,13 @@ img#logo {
 .title-entrar {
     margin-bottom: 33px;
     color: white;
+    font-size: 32px;
 }
 
 .container {
     max-width: 1200px;
     height: 510px;
-    margin: 0;
+    margin: 0 0 40px 0;
     display: flex;
     flex-direction: column;
     padding: 0 20px 0 20px;
@@ -56,7 +57,7 @@ form {
 }
 
 input {
-    width: 95%;
+    width: 93%;
     height: 50px;
     border-radius: 4px;
     border: none;
@@ -118,7 +119,6 @@ input[type="checkbox"]:checked + label::after {
     background-color: rgb(113, 112, 112);
     border: none;
     border-radius: 3px;
-    margin-right: 0.5em;
  }
 
 input#entrar {
@@ -127,7 +127,7 @@ input#entrar {
     font-size: large;
     font-weight: bold;
     padding: 0;
-    width: 100%;
+    width: 98%;
 }
 
 .ajuda {
@@ -171,9 +171,23 @@ form .area-entrar .inputs:valid ~ label {
     color: gray;
     outline: none
 }
+span {
+    font-size: 13px;
+    margin: 0;
+}
 
-p {
-    color: rgb(169, 164, 164);
+.more-info {
+    margin-top: 10px;
+    color: rgb(119, 119, 119);
+}
+
+p#new > a {
+    color: white;
+    margin: 0;
+}
+
+#protected {
+    font-size: 13px;
 }
 
 #divisa {
@@ -185,9 +199,23 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     color: rgb(99, 97, 97);
+    padding: 30px 0 30px 0;
+    margin: 0 20px 0px 20px;
     
 }
 
-li {
+p#doubt {
+    margin: 0 0 30px 0;
+}
+
+ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    font-size: 13px;
+}
+
+li {
+    margin-bottom: 12px;
 }
