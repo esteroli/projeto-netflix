@@ -1,4 +1,4 @@
-@media screen and (min-width:768px) { /*tablet and (max-width: 992px)*/
+@media screen and (min-width:768px) /*and (max-width: 992px)*/ { /*tablet*/
     body {
         background: black url(/imagens/tela-fundo-escuro-netflix.jpg) center center no-repeat fixed;
         background-size: cover;
@@ -14,7 +14,7 @@
     img#logo {
         width: 167px;
         height: 45px;
-        padding: 25px 0 0 20px;
+        padding: 25px 0 0 30px;
         position: relative;
     }
 
@@ -48,11 +48,13 @@
         content: '';
         background-color: rgb(0, 0, 0, 0.70);
         width: 100vw;
-        height: 265px;
+        height: 235px;
+        padding-bottom: 20px;
     }
 
     .rodape {
-        padding: 30px 0 30px 0;
+        padding-top: 30px;
+        margin: 0 40px;
     }
 
     ul {
@@ -61,6 +63,21 @@
     }
 
     li {
-        padding-left: 20px;
+        width: 150px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) { /*desktop */
+    img#Logo {
+        padding: 25px 0 0 30px;
+    }
+    
+    .rodape {
+      margin: 0 50px;
+    }
+
+    li {
+        width: 210px;
     }
 }
