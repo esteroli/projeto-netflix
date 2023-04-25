@@ -69,15 +69,21 @@
 }
 
 @media screen and (min-width: 992px) { /*desktop */
-    img#Logo {
-        padding: 25px 0 0 30px;
-    }
-    
     .rodape {
       margin: 0 50px;
     }
 
     li {
         width: 210px;
+    }
+}
+
+@media screen and (min-width:1200px) { /*grandes telas*/
+    .rodape {
+        margin: 0 180px;
+    }
+
+    li {
+        width: 220px;
     }
 }
